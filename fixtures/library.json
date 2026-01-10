@@ -1,0 +1,80 @@
+[
+  {
+    "model": "book.author",
+    "pk": 1,
+    "fields": {
+      "name": "Robert Martin",
+      "bio": "Author of Clean Code, Clean Architecture and related software engineering books."
+    }
+  },
+  {
+    "model": "book.author",
+    "pk": 2,
+    "fields": {
+      "name": "J.K. Rowling",
+      "bio": "Author of the Harry Potter fantasy series."
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 1,
+    "fields": {
+      "title": "Clean Code",
+      "author": 1,
+      "isbn": "9780132350884",
+      "category": "Programming",
+      "available_status": true
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 2,
+    "fields": {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": 2,
+      "isbn": "9780439064873",
+      "category": "Fantasy",
+      "available_status": false
+    }
+  },
+  {
+    "model": "member.member",
+    "pk": 1,
+    "fields": {
+      "name": "Sayem Khan",
+      "email": "sayem@example.com",
+      "membership_date": "2026-01-01"
+    }
+  },
+  {
+    "model": "member.member",
+    "pk": 2,
+    "fields": {
+      "name": "Fahmida Akter",
+      "email": "fahmida@example.com",
+      "membership_date": "2026-01-05"
+    }
+  },
+  {
+    "model": "borrowing.borrowrecord",
+    "pk": 1,
+    "fields": {
+      "book": 1,
+      "member": 1,
+      "borrow_date": "2026-01-10",
+      "return_date": null,
+      "is_returned": false
+    }
+  },
+  {
+    "model": "borrowing.borrowrecord",
+    "pk": 2,
+    "fields": {
+      "book": 2,
+      "member": 2,
+      "borrow_date": "2026-01-08",
+      "return_date": "2026-01-12",
+      "is_returned": true
+    }
+  }
+]
