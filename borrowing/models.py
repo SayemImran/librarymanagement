@@ -12,4 +12,4 @@ class BorrowRecord(models.Model):
     is_returned = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"🙎{self.member.name} ➡️ {self.book.title}📖"
+        return f"🙎{self.member} ➡️ {self.book.title}📖"

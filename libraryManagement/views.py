@@ -1,4 +1,4 @@
 from django.shortcuts import redirect
 
-def api_root_view(request):
+def root_api(request):
     return redirect('api-root')
